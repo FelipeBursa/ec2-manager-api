@@ -4,14 +4,6 @@
 
 API REST que simula la gestión de instancias EC2 para equipos DBA, desarrollada para el rol de **Ssr Backend Software Engineer**.
 
-### Requisitos Cumplidos ✅
-
-- **GET /instances** - Lista instancias EC2 simuladas (id, name, type, state, region)
-- **POST /instances/{id}/stop** - Simula detener instancia con mensaje éxito/fallo
-- **Python + boto3** con mocks (moto library)
-- **Código limpio y modular** con manejo de errores
-- **Tests unitarios** con 100% coverage
-
 ### Stack Tecnológico
 
 - **[FastAPI](https://fastapi.tiangolo.com/)** - Framework web moderno
@@ -100,28 +92,6 @@ curl http://localhost:8000/instances
 curl -X POST http://localhost:8000/instances/i-1234567890abcdef0/stop
 ```
 
-## 📁 Estructura
-
-```
-ec2-manager-api/
-├── src/
-│   ├── app.py              # App FastAPI principal
-│   ├── models/instance.py  # Modelos Pydantic
-│   ├── routes/instances.py # Endpoints API
-│   ├── services/ec2_service.py # Lógica negocio
-│   └── utils/mock_data.py  # Datos simulados
-├── tests/                  # Tests unitarios/integración
-├── requirements.txt        # Dependencias
-└── README.md
-```
-
-## 🎯 Highlights Técnicos
-
-- **Simulación realista**: Estados EC2 válidos y transiciones lógicas
-- **Error handling**: Validaciones robustas con códigos HTTP apropiados  
-- **Mocking avanzado**: moto para simular boto3 sin AWS real
-- **Documentación automática**: OpenAPI/Swagger incluido
-- **Arquitectura modular**: Separación de responsabilidades clara
 
 ---
 
