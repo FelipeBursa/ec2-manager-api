@@ -30,7 +30,7 @@ API REST que simula la gestión de instancias EC2 para equipos DBA, desarrollada
 
 ```bash
 # 1. Clonar repositorio
-git clone <https://github.com/FelipeBursa/MELI-Challenge.git>
+git clone <https://github.com/FelipeBursa/ec2-manager-api.git>
 cd ec2-manager-api
 
 # 2. Instalar dependencias (NO necesita venv)
